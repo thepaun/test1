@@ -1,0 +1,166 @@
+body{
+    padding-top: 20px;
+    width: 960px;
+    margin: auto;
+    background-color: #720026;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*global nav */
+nav{
+    float: left;
+    width: 20%;
+    border-right: 1px solid #FF9B54;
+    height: 302px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    position: sticky;
+
+}
+nav ul{
+    padding-top: 40%;
+    height: 302px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav ul li a:active, a:hover{
+    color: #FF9B54;
+
+}
+/*footer global */
+
+footer{
+    clear: both;
+    margin-top: 10px;
+    border-top: 1px solid #FF9B54;
+    padding-top: 10px;
+    color: #CE4257;
+    text-align: right;
+}
+
+/*index.html */
+
+.naslovi{
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    border-bottom: 1px solid #FF9B54;
+}
+
+.slika{
+    float:left;
+    padding-right: 10px;
+    border-right: 1px solid #FF9B54;
+    box-sizing: border-box;
+
+}
+
+
+.text1{
+    float: left;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+  height: auto;
+padding-left: 2px;
+    box-sizing: border-box;
+}
+
+/*Early.html */
+
+.tekstearly{
+    float: left;
+
+    width: 70%;
+    box-sizing: border-box;
+}
+.tekstearly .tekst2{
+    color:white
+}
+
+.naslovearly{
+    color: white;
+}
+
+.uni{
+    border-radius: 50%;
+}
+
+/* work */
+.work{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    color: white;
+}
+
+table {
+    float: right;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 79%;
+    margin-bottom: 10px;
+  }
+   
+  th {
+    padding: 18px;
+  }
+   
+  td {
+    padding: 12px;
+  }
+   
+  th,td {
+    border: solid 1px #CE4257;
+  }
+   
+  tr {
+    background-color: #f78b9b;
+    color:white
+  }
+   
+  tr.even {
+    background-color: #CE4257;
+    color: white;
+  }
+   
+  #naslov {
+    background-color: #FF9B54;
+    color: #CE4257;
+  }
+
+  /* pupin coils */
+
+
+
+  .pupin{
+      float: left;
+      width: 30%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #FF9B54;
+      box-sizing: border-box;
+  }
+
+  .tekstpupin{
+    float: left;
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    width: 46%;
+    height: 302px;
+    box-sizing: border-box;
+
+  }
