@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050210;
+}
+
+.krug{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, #fb5dad, #55fb9f, #b97aff);
+    animation: rotacija 0.5s linear infinite;
+}
+
+.krug span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(140deg, #fb5dad, #55fb9f, #b97aff);
+}
+
+
+
+.krug span:nth-child(1){
+    filter: blur(5px);
+}
+.krug span:nth-child(2){
+    filter: blur(10px);
+}
+.krug span:nth-child(3){
+    filter: blur(25px);
+}
+.krug span:nth-child(4){
+    filter: blur(50px);
+}
+
+.krug:after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: #050210;
+}
+
+.drugikrug{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: #101029;
+    animation: puls 1s infinite;
+}
+
+@keyframes puls{
+    0%{
+        transform: scale(0, 0)
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes rotacija{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
