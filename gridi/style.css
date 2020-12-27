@@ -1,0 +1,260 @@
+html,
+body,
+.grid-container {
+  height: 100%;
+  margin: 0;
+  font-family: Heebo;
+}
+
+body {
+  background-color: gray;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1.8fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo kont kont kont"
+    "nav kont kont kont"
+    "nav kont kont kont";
+}
+
+.sredinadugme1 {
+  justify-self: start;
+  align-self: flex-start;
+  display: inline-flex;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 36, 34, 1) 0%,
+    rgba(64, 61, 57, 1) 100%
+  );
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.navi {
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.class {
+  position: a;
+}
+
+
+.nav .navi li {
+  margin-bottom: 150px;
+}
+
+.nav .navi li a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 50px;
+  transition: all 1s ease-in-out;
+}
+
+.nav .navi li a:hover {
+  border-bottom: 2px solid #eb5e28;
+  border-top: 2px solid #eb5e28;
+  color: #eb5e28;
+}
+
+.hamburger{
+  background-color: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.dole {
+  flex-wrap: wrap;
+}
+
+.nav .git {
+  background-image: url(linkedin.png);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.nav .git1 {
+  background-image: url(github.png);
+  background-size: cover;
+  justify-content: space-between;
+  height: 20px;
+  width: 20px;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Suez One", cursive;
+  background-color: #eb5e28;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  background: #ccc5b9;
+  -webkit-transition: background-color 500ms ease-out 0.5s;
+  -moz-transition: background-color 500ms ease-out 0.5s;
+  -o-transition: background-color 500ms ease-out 0.5s;
+  transition: background-color 500ms ease-out 0.5s;
+}
+
+.kont {
+  grid-area: kont;
+  background: linear-gradient(
+    0deg,
+    rgba(37, 36, 34, 1) 0%,
+    rgba(64, 61, 57, 1) 100%
+  );
+  -webkit-box-shadow: inset 26px -6px 54px -26px #1b1b1b;
+  -moz-box-shadow: inset 26px -6px 54px -26px #1b1b1b;
+  box-shadow: inset 26px -6px 54px -26px #1b1b1b;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.sredina > h1,
+h2,
+h3,
+p {
+  color: white;
+}
+#pored {
+  display: inline;
+}
+
+#stasam::before {
+  content: "";
+  text-transform: uppercase;
+  animation: menjanje 9s ease-in infinite;
+}
+
+#linkdole {
+  text-decoration: none;
+  color: #eb5e28;
+}
+.logobox {
+  width: 400px;
+  height: 400px;
+  background-image: url(logo2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sredinadugme {
+  border: 2px solid #eb5e28;
+  background-color: none;
+  padding: 10px 30px;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.sredinadugme:hover {
+  background-color: #eb5e28;
+}
+
+.sredinadugme a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes menjanje {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+
+  0% {
+    content: "Front End Developer";
+  }
+  50% {
+    content: "photograph";
+  }
+  100% {
+    content: "Kurcina";
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo nav nav nav"
+      "kont kont kont kont"
+      "kont kont kont kont";
+  }
+  .logo {
+    grid-area: logo;
+  }
+
+  .nav {
+    grid-area: nav;
+    flex-direction: row;
+  }
+
+  .navi {
+    display: none;
+
+  }
+
+  .navi.show {
+    display: inline;
+
+  }
+
+
+  .nav .navi li {
+    margin-bottom: 0px;
+  }
+
+  .kont {
+    grid-area: kont;
+  }
+}
