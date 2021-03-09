@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+    <script>
+        let a = prompt("Unesite prvi broj");
+        let operacija = prompt("Unesite operaciju koju zelite da izvrsite(+, -, *, /)");
+        let b = prompt("Unesite drugi broj");
+        let sum;
+
+        if (operacija == "+"){
+            sum = parseInt(a) + parseInt(b);
+            document.write("Vas rezultat je: " + sum)
+        }else if (operacija == "/"){
+            sum = parseInt(a) / parseInt(b);
+            document.write("Vas rezultat je: " + sum)
+        }else if (operacija == "*"){
+            sum = parseInt(a) * parseInt(b);
+            document.write("Vas rezultat je: " + sum)
+        }else if (operacija == "-"){
+            sum = parseInt(a) - parseInt(b);
+            document.write("Vas rezultat je: " + sum)
+        }else{
+            document.write("molimo unesite tacnu operaciju")
+        }
+
+    </script>
+</body>
+
+</html>
